@@ -478,8 +478,8 @@ MonoBehaviour:
   brakeForce: 0.95
   shipRoll: 30
   hoverHeight: 2
-  maxAirDist: 2
-  hoverForce: 10
+  maxAirDist: 5
+  hoverForce: 12
   raycasters:
   - {fileID: 1378807275}
   - {fileID: 946702961}
@@ -489,14 +489,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   PID:
-    pCoeff: 0.5
+    pCoeff: 1.1
     iCoeff: 0
-    dCoeff: 0
+    dCoeff: 0.34
     minimum: -1
     maximum: 1
   maxVelocity: 100
-  hoverGravity: 0
-  fallGravity: 0
+  hoverGravity: 8
+  fallGravity: 10
 --- !u!54 &748944067
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748944065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25, y: 5, z: 25}
+  m_LocalPosition: {x: 25, y: 100, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
